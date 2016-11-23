@@ -1,4 +1,4 @@
-//package simpleatm;
+package simpleatm;
 
 import javax.swing.*;
 import java.awt.*;
