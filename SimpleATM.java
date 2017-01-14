@@ -11,8 +11,12 @@ public class SimpleATM {
   private Account acc = new Account(100.0);
 
   public static void main(String[] args) {
-    SimpleATM atm = new SimpleATM();
-    atm.setUpGui();
+	  SwingUtilities.invokeLater(new Runnable() {
+		  public void run() {
+			  SimpleATM atm = new SimpleATM();
+			  atm.setUpGui();
+		  }
+	  })
   }
 
   class AddButtonListener implements ActionListener {
